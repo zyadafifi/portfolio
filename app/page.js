@@ -316,7 +316,9 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="btn-primary flex items-center gap-2">
                 <Download size={20} />
-                Download Resume
+                <a href="https://www.linkedin.com/in/zyad-ahmed-afify/overlay/1752930272578/single-media-viewer/?type=DOCUMENT&profileId=ACoAADFpkLkB9igE-fW-Vv5j5Ue4Fc5ua7JMExU">
+                  Download Resume
+                </a>
               </button>
               <button className="btn-secondary flex items-center gap-2">
                 <a href="https://github.com/zyadafifi?tab=repositories">
