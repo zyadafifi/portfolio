@@ -1,0 +1,25 @@
+/**
+ * Design tokens & CSS custom properties
+ * Used by components for consistent theming
+ */
+
+:root {
+  /* Breakpoints (reference for JS - actual breakpoints in Tailwind) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Spacing scale */
+  --section-padding-y-mobile: 3rem;
+  --section-padding-y-tablet: 4rem;
+  --section-padding-y-desktop: 5rem;
+  --section-padding-x: 1rem;
+  --container-max: 1280px;
+
+  /* Animation */
+  --transition-fast: 150ms;
+  --transition-base: 250ms;
+  --transition-slow: 400ms;
+}

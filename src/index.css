@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "./styles/variables.css";
+@import "./styles/typography.css";
+
+/* Google Fonts - loaded in index.html for better performance */
+
+@theme {
+  /* Futuristic developer palette */
+  --color-bg: #0a0a0c;
+  --color-surface: #12141a;
+  --color-surface-elevated: #1a1d26;
+  --color-border: #252830;
+
+  /* Primary: Electric cyan */
+  --color-primary: #00d4ff;
+  --color-primary-dim: #00a8cc;
+  --color-primary-glow: rgba(0, 212, 255, 0.4);
+
+  /* Secondary: Violet glow */
+  --color-secondary: #a855f7;
+  --color-secondary-dim: #7c3aed;
+  --color-secondary-glow: rgba(168, 85, 247, 0.35);
+
+  /* Neutrals */
+  --color-foreground: #f4f4f5;
+  --color-muted: #71717a;
+  --color-muted-foreground: #a1a1aa;
+
+  /* Font families */
+  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-section-y: 4rem;
+  --spacing-section-x: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-foreground antialiased;
+    font-family: var(--font-body);
+    min-height: 100vh;
+  }
+
+  /* RTL support - Cairo font for Arabic */
+  [dir="rtl"] {
+    font-family: "Cairo", var(--font-body), system-ui, sans-serif;
+  }
+
+  [dir="rtl"] .hero-title,
+  [dir="rtl"] .section-title {
+    font-family: "Cairo", var(--font-heading), system-ui, sans-serif;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Grid background animation */
+@keyframes grid-shift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 64px 64px;
+  }
+}
