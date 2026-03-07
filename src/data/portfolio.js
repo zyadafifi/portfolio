@@ -7,7 +7,7 @@ export const HERO = {
     "I build clean, accessible interfaces with React and Tailwind. Focused on performance, UX, and scalable architecture.",
   cta: {
     projects: { label: "View Projects", href: "#projects" },
-    resume: { label: "Download Resume", href: "/resume.pdf" },
+    resume: { label: "Download Resume", href: "/resume.pdf", download: "Zyad_Afifi_Resume.pdf" },
     contact: { label: "Contact", href: "#contact" },
   },
   techBadges: ["React", "Tailwind", "TypeScript", "Firebase"],

@@ -92,7 +92,7 @@ export default function HeroSection() {
             </a>
             <a
               href={HERO.cta.resume.href}
-              download
+              download={HERO.cta.resume.download}
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/50 hover:text-primary"
             >
               {t("hero.cta.resume")}
